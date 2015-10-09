@@ -5,8 +5,6 @@
  */
 package dados;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author Mr Anderson
@@ -18,8 +16,8 @@ public class Cliente {
     private String data;
     private String email;
     private String endereco;
-    private double telefone;
-    private double cfp;
+    private String telefone;
+    private String cpf;
     
     
     private static int contadorCodigo = 1;
@@ -36,8 +34,8 @@ public Cliente() {
                    String data,
                    String endereco,
                    String email,
-                   double telefone, 
-                   double cfp) {
+                   String telefone, 
+                   String cpf) {
           
           codigo = contadorCodigo;
           contadorCodigo++;
@@ -45,12 +43,14 @@ public Cliente() {
           
           this.nome = nome;
         this.data = data;
-        this.cfp = cfp;
+        this.cpf = cpf;
         this.telefone = telefone;
         this.email = email;
         this.endereco = endereco;
         
       }
+
+
         
       public void imprimirDados() {
         
@@ -67,7 +67,7 @@ public Cliente() {
         relatorio += "\nEmail para contato: "+email;        
         relatorio += "\nEndereço do Cliente: "+endereco;
         relatorio += "\nTelefone para contato: "+telefone;
-        relatorio += "\nCpf: "+cfp;
+        relatorio += "\nCpf: "+cpf;
         return relatorio;
     }
     public int getCodigo() {
@@ -106,30 +106,36 @@ public Cliente() {
         this.endereco = endereco;
     }
 
-    public double getTelefone() {
+    public String getTelefone() {
         return telefone;
     }
 
-    public void setTelefone(double telefone) {
+    public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
 
-    public double getCfp() {
-        return cfp;
+    public String getCfp() {
+        return cpf;
     }
 
-    public void setCfp(double cfp) {
-        this.cfp = cfp;
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
     }
 
     public String getTel() {
-        String Tel = null;
-return Tel;
+        
+return telefone;
     }
 
     public String getCpf() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return cpf;
     }
 
-   
+    public String getcpf() {
+        return cpf;
+    }
+
+    public String gettelefone() {
+     return telefone;
+    }
 }

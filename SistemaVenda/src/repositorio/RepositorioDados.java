@@ -142,6 +142,11 @@ public class RepositorioDados {
 //        }
         
     }
+       public static String exxcluirProduto (Produto ExcluirProduto){
+        listaProdutos.remove(ExcluirProduto);
+        String e = "";
+        return e;
+    }
 
 }
  // fim classe

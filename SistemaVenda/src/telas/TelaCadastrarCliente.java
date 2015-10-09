@@ -6,9 +6,7 @@
 package telas;
 import javax.swing.JOptionPane;
 import dados.Cliente;
-import javax.swing.JTextField;
 import repositorio.RepositorioCliente;
-import repositorio.RepositorioDados;
 
 /**
  *
@@ -30,8 +28,8 @@ public class TelaCadastrarCliente extends javax.swing.JFrame {
             jTextField2.setText(cliente.getData());
             jTextField3.setText(cliente.getEmail());
             jTextField4.setText(cliente.getEndereco());
-            jTextField5.setText(cliente.getTel());
-            jTextField6.setText(cliente.getCpf());
+            jTextField5.setText(cliente.getTelefone());
+            jTextField6.setText(cliente.getcpf());
         }
             
             
@@ -212,6 +210,10 @@ public class TelaCadastrarCliente extends javax.swing.JFrame {
         String endereco = jTextField4.getText();
         String tel = jTextField5.getText();
         String cpf = jTextField6.getText();
+        
+        double Tel = Double.parseDouble(tel);
+        double Cpf = Double.parseDouble(cpf);
+        
 
         
         
@@ -223,7 +225,7 @@ public class TelaCadastrarCliente extends javax.swing.JFrame {
         
         // converter String para double1
         double Telefone = Double.parseDouble(tel);
-        double Cpf = Double.parseDouble(cpf);
+        double cpff = Double.parseDouble(cpf);
      
         
         if (this.cliente != null) {
@@ -234,8 +236,8 @@ public class TelaCadastrarCliente extends javax.swing.JFrame {
             this.cliente.setData(data);
             this.cliente.setEmail(email);
             this.cliente.setEndereco(endereco);
-            this.cliente.setTelefone(Telefone);
-            this.cliente.setCfp(Cpf);
+            this.cliente.setTelefone(tel);
+            this.cliente.setCpf(cpf);
                     
             RepositorioCliente.editarCliente(this.cliente);
             JOptionPane.showMessageDialog(this, "Atualizado com Sucesso!" );
@@ -243,7 +245,8 @@ public class TelaCadastrarCliente extends javax.swing.JFrame {
         } else {
             
             // criando um objeto Produto
-        Cliente cliente = new Cliente(nome, data, email, endereco,Telefone,Cpf);
+        Cliente cliente = new Cliente(nome, data, endereco, email, tel, cpf);
+        
 
 
             // metodo opcional para visualizar dados        

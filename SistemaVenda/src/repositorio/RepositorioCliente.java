@@ -5,7 +5,6 @@
  */
 package repositorio;
 import dados.Cliente;
-import dados.Produto;
 import java.util.ArrayList;
 
 
@@ -20,7 +19,7 @@ public class RepositorioCliente {
     public static void inicializandoDados() {
         
         // criando os objetos diretamente
-        Cliente c1 = new Cliente("José Anderson", "05/10/1994" , "Anderson@.. " , "Rua... " , 992280000, 555555555);
+        Cliente c1 = new Cliente("José", "05/10", "rua", "@hot", "594759", "98437");
         
         listaClientes.add(c1);
         
@@ -55,7 +54,13 @@ public class RepositorioCliente {
             if (c.getCodigo() == cliente.getCodigo()) {
                 c = cliente;
                 break;
+               
             }
         }
+    }
+    public static String excluirCliente (Cliente Excluircliente){
+        listaClientes.remove(Excluircliente);
+        String e = "";
+        return e;
     }
 }

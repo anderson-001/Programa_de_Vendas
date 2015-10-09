@@ -118,7 +118,7 @@ public class TelaPesquisarCliente extends javax.swing.JFrame {
             }
             
         } else {
-            JOptionPane.showMessageDialog(this, "Não o cliente com esse código");
+            JOptionPane.showMessageDialog(this, "Não existe cliente com esse código");
         }
         
         
