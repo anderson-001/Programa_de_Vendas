@@ -7,6 +7,9 @@ package sistemavenda;
 
 import telas.TelaPrincipal;
 import repositorio.RepositorioDados;
+import repositorio.RepositorioCliente;
+import telas.TelaCadastrarCliente;
+
 
 /**
  *

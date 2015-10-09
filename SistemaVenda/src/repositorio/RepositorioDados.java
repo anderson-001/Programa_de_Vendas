@@ -5,6 +5,7 @@
  */
 package repositorio;
 
+import dados.Cliente;
 import dados.Produto;
 import java.util.ArrayList;
 
@@ -27,9 +28,11 @@ public class RepositorioDados {
     private static ArrayList<Produto> listaProdutos = new ArrayList();
     
     
+    
     /**
      * Estrutura para carregar dados FAKE na memória
      */
+    
     public static void inicializandoDados() {
         
         // criando os objetos diretamente
@@ -48,6 +51,7 @@ public class RepositorioDados {
         listaProdutos.add(p1);
         listaProdutos.add(p2);
         listaProdutos.add(p3);
+        
     }
     
     
@@ -65,6 +69,7 @@ public class RepositorioDados {
 //        posicaoLivre++;
        */
         listaProdutos.add(p);
+        
     }
     
     /**
@@ -137,5 +142,6 @@ public class RepositorioDados {
 //        }
         
     }
-    
-} // fim classe
+
+}
+ // fim classe
