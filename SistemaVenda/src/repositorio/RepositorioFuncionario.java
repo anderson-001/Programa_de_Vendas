@@ -13,23 +13,6 @@ import java.util.ArrayList;
 public class RepositorioFuncionario {
     
     private static ArrayList<funcionarios> Listarfuncionarios = new ArrayList();
-    
-    public static void inicializandofuncionarios() {
-        
-        
-            funcionarios f = new funcionarios("João", "Rua...", 111, 0005);
-                    
-        Listarfuncionarios.add(f);
-    }   
-public static void adicionarfuncionarios (funcionarios f) {
-    Listarfuncionarios.add(f);
-            
-        }
-    public static boolean temEspaco() {
-        return Listarfuncionarios != null; 
-    }
-        
-    
     /**
      *
      * @param codigo
@@ -60,6 +43,8 @@ public static void adicionarfuncionarios (funcionarios f) {
             }
         }
     }
+
+   
 }
         
   

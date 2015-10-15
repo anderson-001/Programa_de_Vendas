@@ -212,7 +212,8 @@ if (RepositorioDados.temEspaco()) {
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
+  TelaCadastrarFuncionario tela = new TelaCadastrarFuncionario();
+  tela.setVisible(true);
         
     }//GEN-LAST:event_jButton6ActionPerformed
 

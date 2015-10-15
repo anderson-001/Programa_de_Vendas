@@ -14,8 +14,8 @@ public class funcionarios {
     private int codigo;
     private String nome;
     private String end;
-    private double cpf;
-    private double tel;
+    private String cpf;
+    private String tel;
     
     private static int contadorCodigo = 1;
     
@@ -30,8 +30,8 @@ public class funcionarios {
             
     public funcionarios (String nome,
                         String end,
-                        double cpf,
-                        double tel ) {
+                        String cpf,
+                        String tel ) {
         codigo = contadorCodigo; 
         contadorCodigo++;
         System.out.println("Construtor de agumento ");
@@ -75,17 +75,17 @@ public class funcionarios {
     public void setEnd (String end){
         this.end = end;
     }
-    public double getCpf (){
+    public String getCpf (){
         return cpf;
         
     }
-    public void setCpf(double Cpf){
+    public void setCpf(String Cpf){
         this.cpf = cpf;
     }
-    public double getTel(){
+    public String getTel(){
         return tel;
     }
-    public void setTel(double Tel){
+    public void setTel(String Tel){
         this.tel = tel;
         
     }
